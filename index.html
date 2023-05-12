@@ -7,23 +7,31 @@
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #F2CDAC;
-			margin: ;
-			padding: ;
+			margin: 0;
+			padding: 0;
 		}
 		h1 {
 			font-size: 48px;
 			text-align: center;
 			color: #FFFFFF;
-			background-color: #D3413D;
+			background-color: rgba(211,65,61,0.9);
 			padding: 20px;
-			margin-top: ;
+			margin-top: 0;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 		}
 		nav {
-			background-color: #D3413D;
+			background-color: rgba(211,65,61,0.7);
 			height: 50px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			position: sticky;
+			top: 0;
+			z-index: 1;
 		}
 		nav a {
 			color: #FFFFFF;
@@ -35,14 +43,16 @@
 			transition: background-color .3s;
 		}
 		nav a:hover {
-			background-color: #C12F2A;
+			background-color: rgba(193,47,42,0.7);
 		}
 		main {
-			background-color: #FFFFFF;
+			background-color: rgba(255,255,255,0.8);
 			padding: 20px;
 			margin: 20px;
 			border-radius: 10px;
-			box-shadow: 5px 5px 10px rgba(, , , .2);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
 		}
 		p {
 			font-size: 24px;
@@ -56,24 +66,28 @@
 			max-width: 500px;
 			height: auto;
 			margin-bottom: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
 		}
 	</style>
 </head>
 <body>
-	<h1>欢迎来到毛蛋共和国</h1>
-	<nav>
-		<a href="index.html">首页</a>
-		<a href="jianjiao.html">建交名录</a>
-		<a href="qianzheng.html">签证申请</a>
-	</nav>
-	<main>
-		<img src="国旗.jpg" alt="毛蛋共和国国旗">
-		<p>毛蛋共和国是一个虚拟国家，位于大东洲中心。我们的国旗是橙色、白色和蓝色相间，寓意着我们的人民勇往直前，永不退缩。</p>
-		<p>我们的国家以自然景观和文化多样性而闻名，每年都吸引着数百万的游客前来观光。我们有世界上最美丽的海滩、峡谷和瀑布，还有许多古老的文化遗址和历史建筑。</p>
-		<p>如果你对我们的国家感兴趣，可以通过以下方式联系我们：</p>
-		<ul>
-			<li>Email：2803074099@qq.com</li>
-		</ul>
-	</main>
+<h1>欢迎来到毛蛋共和国</h1>
+<nav>
+	<a href="index.html">首页</a>
+	<a href="jianjiao.html">建交名录</a>
+	<a href="qianzheng.html">签证申请</a>
+</nav>
+<main>
+	<img src="国旗.jpg" alt="毛蛋共和国国旗">
+	<p>毛蛋共和国是一个虚拟国家，位于大东洲中心。我们的国旗是橙色、白色和蓝色相间，寓意着我们的人民勇往直前，永不退缩。</p>
+	<p>我们的国家以自然景观和文化多样性而闻名，每年都吸引着数百万的游客前来观光。我们有世界上最美丽的海滩、峡谷和瀑布，还有许多古老的文化遗址和历史建筑。</p>
+	<p>如果你对我们的国家感兴趣，可以通过以下方式联系我们：</p>
+	<ul>
+		<li>Email：2803074099@qq.com</li>
+	</ul>
+</main>
 </body>
 </html>
