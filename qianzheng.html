@@ -74,34 +74,50 @@
 	</style>
 </head>
 <body>
-	<h1>毛蛋共和国签证申请</h1>
-		<nav>
-		<a href="index.html">首页</a>
-		<a href="jianjiao.html">建交名录</a>
-		<a href="qianzheng.html">签证申请</a>
-	</nav>
-	<main>
-		<form action="https://formspree.io/f/xjvdlloj" method="POST">
-			<label for="name">姓名</label>
-			<input type="text" id="name" name="name" required>
-			
-			<label for="passport">护照号</label>
-			<input type="text" id="passport" name="passport" required>
-			
-			<label for="nationality">国籍</label>
-			<select id="nationality" name="nationality" required>
-				<option value="">请选择国籍</option>
-				<option value="斯特维亚">斯特维亚</option>
-				<option value="大松联合帝国">大松联合帝国</option>
-				<option value="天盛">天盛</option>
-				<option value="虚拟国际成员国">虚拟国际成员国</option>
-			</select>
-			
-			<label for="email">邮箱</label>
-			<input type="email" id="email" name="_replyto" required>
-			
-			<button type="submit">提交申请</button>
-		</form>
-	</main>
+<h1>毛蛋共和国签证申请</h1>
+<nav>
+	<a href="index.html">首页</a>
+	<a href="jianjiao.html">建交名录</a>
+	<a href="qianzheng.html">签证申请</a>
+</nav>
+<main>
+	<form action="https://formspree.io/f/xjvdlloj" method="POST">
+		<label for="name">姓名</label>
+		<input type="text" id="name" name="name" placeholder="请输入您的姓名" required>
+
+		<label for="passport">护照号</label>
+		<input type="text" id="passport" name="passport" placeholder="请输入您的护照号码" required>
+
+		<label for="nationality">国籍</label>
+		<select id="nationality" name="nationality" required>
+			<option value="">请选择国籍</option>
+			<option value="斯特维亚">斯特维亚</option>
+			<option value="大松联合帝国">大松联合帝国</option>
+			<option value="天盛">天盛</option>
+			<option value="虚拟国际成员国">虚拟国际成员国</option>
+			<option value="加斯民主共和国联盟">加斯民主共和国联盟</option>
+		</select>
+
+		<label for="email">邮箱</label>
+		<input type="email" id="email" name="_replyto" placeholder="请输入您的电子邮件地址" required>
+
+		<label for="visit-purpose">来访目的</label>
+		<input type="text" id="visit-purpose" name="visit-purpose" placeholder="请输入您的来访目的" required>
+
+		<label for="duration">预计停留时间</label>
+		<select id="duration" name="duration" required>
+			<option value="">请选择预计停留时间</option>
+			<option value="1 week">1周</option>
+			<option value="2 weeks">2周</option>
+			<option value="3 weeks">3周</option>
+			<option value="1 month">1个月</option>
+			<option value="2 months">2个月</option>
+			<option value="3 months">3个月</option>
+			<option value="*">无限期</option>
+		</select>
+
+		<button type="submit">提交申请</button>
+	</form>
+</main>
 </body>
 </html>
