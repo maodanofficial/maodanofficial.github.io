@@ -8,23 +8,34 @@
 		body {
 			font-family: Arial, sans-serif;
 			background-color: #F2CDAC;
-			margin: 0; /* 去除body的margin */
-			padding: 0; /* 去除body的padding */
+			margin: 0;
+			padding: 0;
 		}
+		.rotate-image {
+      transform: rotate(90deg);
+    }
 		h1 {
 			font-size: 48px;
 			text-align: center;
 			color: #FFFFFF;
-			background-color: #D3413D;
+			background-color: rgba(211,65,61,0.9);
 			padding: 20px;
-			margin-top: 0; /* 去除h1的margin-top */
+			margin-top: 0;
+			border-bottom-left-radius: 10px;
+			border-bottom-right-radius: 10px;
+			box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
 		}
 		nav {
-			background-color: #D3413D;
+			background-color: rgba(211,65,61,0.7);
 			height: 50px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			position: sticky;
+			top: 0;
+			z-index: 1;
 		}
 		nav a {
 			color: #FFFFFF;
@@ -36,46 +47,33 @@
 			transition: background-color .3s;
 		}
 		nav a:hover {
-			background-color: #C12F2A;
+			background-color: rgba(193,47,42,0.7);
 		}
 		main {
-			background-color: #FFFFFF;
+			background-color: rgba(255,255,255,0.8);
 			padding: 20px;
 			margin: 20px;
 			border-radius: 10px;
-			box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
 		}
-		form {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			max-width: 500px; /* 添加max-width属性 */
-			margin: 0 auto; /* 居中显示 */
+		p {
+			font-size: 24px;
+			line-height: 1.5;
+			margin-bottom: 20px;
 		}
-		label {
-			font-size: 20px;
-			margin-top: 10px;
-		}
-		input, select {
-			font-size: 18px;
-			padding: 5px;
-			width: 100%;
-			margin-top: 5px;
-		}
-		button {
-			font-size: 20px;
-			padding: 10px;
-			margin-top: 20px;
-			background-color: #D3413D;
-			color: #FFFFFF;
-			border: none;
-			border-radius: 5px;
-			cursor: pointer;
-			transition: background-color .3s;
-			width: 100%; /* 修改button的宽度 */
-		}
-		button:hover {
-			background-color: #C12F2A;
+		img {
+			display: block;
+			margin: auto;
+			width: 50%;
+			max-width: 500px;
+			height: auto;
+			margin-bottom: 20px;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
 		}
 	</style>
 </head>
